@@ -1,0 +1,11 @@
+label {
+    color: red;
+}
+.labels, .images, td {
+    text-align: center;
+    font-size: 20px;
+    color:green;
+}
+#l1 {
+    color:blue;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTO 12 REGISTRATION PAGE</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+                <label for="username" class="labels" id="l1">Username</label>
+            </td>
+            <td>
+                <input type="text" id="username" onchange="readInputText();"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pass" class="labels">Password</label>
+            </td>
+            <td>
+                <input type="password" id="pass" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="passrepeat" class="labels">Repeat password</label>
+            </td>
+            <td>
+                <input type="password" id="passrepeat"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="txtarea1" class="labels">Address</label>
+            </td>
+            <td>
+                <textarea id="txtarea1"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="labels" for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" id="email"/>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" id="submitbutton"/>
+    <input type="reset" id="resetbutton"/>
+    <button type="button" value="button1" id="b1" onclick="clickMe();">My Button</button>
+</form>
+<img src="Capture.PNG" id="img1" class="images" /> <br/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Black_Sea_map.png" id="img2" class="images" width="150" height="100"/> <br/>
+<a href="https://wikipedia.com/" id="link1">Click here for wikipedia</a> <br/>
+<a href="https://github.com/alexgatu/Automation_12/blob/master/src/main/HTML_CSS_JS/registration.html" target="_blank" id="link2">
+    Click here for the GitHub page of this file</a>
+<div id="result">
+
+</div>
+</body>
+</html>
