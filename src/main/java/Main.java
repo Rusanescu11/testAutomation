@@ -1,11 +1,19 @@
 
-
+import ExercitiiClasa.Circle;
+import tema3.BookModel;
 
 import java.util.Scanner;
 
 
 public class Main {
     public static void main(String[] args) {
+//        BookModel bookModel = new BookModel("Jocurile Foamrei", 2010, "Suzanne Collins", 100);
+//        System.out.println("Nume: " + bookModel.getName());
+//        System.out.println("An: " + bookModel.getYear());
+//        System.out.println("Autor: "+bookModel.getAuthor());
+//        System.out.println("Pret:" +bookModel.getPrice());
+//
+
         // Exercitii.sumaPrimelor100Cifre();
 
 //        int limit = 10000000;
@@ -16,18 +24,19 @@ public class Main {
 //                System.out.println(number);
 //            }
 //        }
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a year (between 1900 and 2016): ");
-        int year = scanner.nextInt();
-
-        if (year >= 1900 && year <= 2016) {
-            int daysInFebruary = getDaysInFebruary(year);
-            System.out.println("Number of days in February " + year + ": " + daysInFebruary);
-        } else {
-            System.out.println("Invalid year entered. Please try again.");
-        }
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter a year (between 1900 and 2016): ");
+//        int year = scanner.nextInt();
+//
+//        if (year >= 1900 && year <= 2016) {
+//            int daysInFebruary = getDaysInFebruary(year);
+//            System.out.println("Number of days in February " + year + ": " + daysInFebruary);
+//        } else {
+//            System.out.println("Invalid year entered. Please try again.");
+//        }
     }
+
     private static boolean isPrime(int number) {
 
         for (int i = 2; i <= Math.sqrt(number); i++) {
@@ -38,6 +47,7 @@ public class Main {
 
         return true;
     }
+
     private static int getDaysInFebruary(int year) {
         if (isLeapYear(year)) {
             return 29; // Leap year, February has 29 days
@@ -49,4 +59,5 @@ public class Main {
     private static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
+
 }
