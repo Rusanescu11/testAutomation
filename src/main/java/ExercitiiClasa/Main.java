@@ -6,10 +6,10 @@ public class Main {
 //        circle.setRadius(5.0);
 //        System.out.println(circle.radius);
 //        System.out.println(circle.getArea());
-        Draw.printeazaDreptunghi(4,5);
+      //  Draw.printeazaDreptunghi(4,5);
         int latime = 10;
         int inaltime = 4;
         Draw.deseneazaConturForma(latime, inaltime);
-        Draw.deseneazaForma2(latime,inaltime);
+       // Draw.deseneazaForma2(latime,inaltime);
     }
 }

@@ -11,8 +11,8 @@ public class Draw {
         }
     }
     public static void deseneazaConturForma(int latime, int inaltime) {
-        for (int i = 0; i < inaltime; i++) {
-            for (int j = 0; j < latime; j++) {
+        for (int i = 0; i < inaltime; i++) {//4
+            for (int j = 0; j < latime; j++) {//10
                 if (i == 0 || i == inaltime - 1 || j == 0 || j == latime - 1) {
                     System.out.print("*");
                 } else {
