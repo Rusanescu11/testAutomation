@@ -40,5 +40,21 @@ public class Catalog {
         return NAMES_Students;
     }
 
+    public void afisareStudentiDupaMedie() {
+        List<Map.Entry<String, Double>> studentEntries = new ArrayList<>(students.entrySet());
+
+        // Sortarea listei de intrări în funcție de valoarea mediei
+        Collections.sort(studentEntries, new Comparator<Map.Entry<String, Double>>() {
+            @Override
+            public int compare(Map.Entry<String, Double> entry1, Map.Entry<String, Double> entry2) {
+                return Double.compare(entry2.getValue(), entry1.getValue());
+            }
+        });
+        for (Map.Entry<String, Double> entry : studentEntries) {
+            String studentName = entry.getKey();
+            double studentAverage = entry.getValue();
+            System.out.println("Studentul " + studentName + " are media " + studentAverage);
+        }
+    }
 
 }

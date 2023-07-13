@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe4763c-7fc1-4d01-84f0-51a5e20f36a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/petHotel/PetHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/temaColectii/Catalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/temaColectii/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExercitiiClasa/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExercitiiClasa/Draw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExercitiiClasa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExercitiiClasa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestareAutomata1-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Draw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tema2/Exercitii.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tema3/AuthorModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tema3/BookModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/temaColectii/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temaColectii/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/temaColectii/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temaColectii/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/temaColectii/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/temaColectii/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +49,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Draw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExercitiiClasa.Draw" />
       <module name="TestareAutomata1" />
@@ -124,8 +111,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Draw" />
       </list>
@@ -176,38 +163,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1687346826877" />
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom" timestamp="1689249377854">
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom" timestamp="1689252043847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1689249377854" />
-    <state width="1323" height="174" key="GridCell.Tab.0.center" timestamp="1689249377853">
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1689252043847" />
+    <state width="1323" height="200" key="GridCell.Tab.0.center" timestamp="1689252043846">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1689249377853" />
-    <state width="1323" height="174" key="GridCell.Tab.0.left" timestamp="1689249377853">
+    <state width="1323" height="200" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1689252043846" />
+    <state width="1323" height="200" key="GridCell.Tab.0.left" timestamp="1689252043846">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1689249377853" />
-    <state width="1323" height="174" key="GridCell.Tab.0.right" timestamp="1689249377853">
+    <state width="1323" height="200" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1689252043846" />
+    <state width="1323" height="200" key="GridCell.Tab.0.right" timestamp="1689252043846">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1689249377853" />
-    <state width="1323" height="200" key="GridCell.Tab.1.bottom" timestamp="1689248386483">
+    <state width="1323" height="200" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1689252043846" />
+    <state width="1323" height="200" key="GridCell.Tab.1.bottom" timestamp="1689252045015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1689248386483" />
-    <state width="1323" height="200" key="GridCell.Tab.1.center" timestamp="1689248386483">
+    <state width="1323" height="200" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1689252045015" />
+    <state width="1323" height="200" key="GridCell.Tab.1.center" timestamp="1689252045014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1689248386483" />
-    <state width="1323" height="200" key="GridCell.Tab.1.left" timestamp="1689248386483">
+    <state width="1323" height="200" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1689252045014" />
+    <state width="1323" height="200" key="GridCell.Tab.1.left" timestamp="1689252045014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1689248386483" />
-    <state width="1323" height="200" key="GridCell.Tab.1.right" timestamp="1689248386483">
+    <state width="1323" height="200" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1689252045014" />
+    <state width="1323" height="200" key="GridCell.Tab.1.right" timestamp="1689252045014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1689248386483" />
+    <state width="1323" height="200" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1689252045014" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1687347309645">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -224,5 +211,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1687346830711" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/temaColectii/Catalog.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="entry2" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
