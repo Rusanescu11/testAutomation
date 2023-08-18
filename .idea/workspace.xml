@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="abe4763c-7fc1-4d01-84f0-51a5e20f36a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/course08/FirstTestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course08/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ConfigUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/drives/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConfigUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConfigUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConstantUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Draw.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Draw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/course08/FirstTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/course08/FirstTestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/course08/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/course08/LoginTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/petHotel/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/petHotel/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/petHotel/PetHotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/petHotel/PetHotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tema2/Exercitii.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tema2/Exercitii.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tema3/AuthorModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tema3/AuthorModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tema3/BookModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tema3/BookModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Catalog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/temaColectii/Catalog$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/temaColectii/Catalog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/temaColectii/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/BrowserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/BrowserUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/ConfigUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/ConfigUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/ConstantUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/ConstantUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/LoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +53,29 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="97f182c9-644b-4994-adf0-e04dbd1d8395" />
+        <option name="url" value="https://github.com/Rusanescu11/testAutomation.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2Q10i0tt4dOSDXFjHBRhF6HjAJO" />
@@ -49,25 +83,22 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\alt\src\test\java" />
       <recent name="C:\TestareAutomata\src\test\resources\drives" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.login">
+  <component name="RunManager" selected="TestNG.RegistrationTests.alreadyRegistred">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TestareAutomata1" />
@@ -75,71 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTestClass.chromeDriverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestareAutomata1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="course08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="course08" />
-      <option name="MAIN_CLASS_NAME" value="course08.FirstTestClass" />
-      <option name="METHOD_NAME" value="chromeDriverTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTestClass.htmlUnitDriverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestareAutomata1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="course08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="course08" />
-      <option name="MAIN_CLASS_NAME" value="course08.FirstTestClass" />
-      <option name="METHOD_NAME" value="htmlUnitDriverTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTestClass.webElementTestGetText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestareAutomata1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="course08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="course08" />
-      <option name="MAIN_CLASS_NAME" value="course08.FirstTestClass" />
-      <option name="METHOD_NAME" value="webElementTestGetText" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestareAutomata1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestareAutomata1" />
+    <configuration name="LoginTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -149,21 +117,96 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
       <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTests.alreadyRegistred" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTests" />
+      <option name="METHOD_NAME" value="alreadyRegistred" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTests.registerNegativeUserShortLong" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTests" />
+      <option name="METHOD_NAME" value="registerNegativeUserShortLong" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTests.registration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTests" />
+      <option name="METHOD_NAME" value="registration" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.login" />
-        <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.FirstTestClass.htmlUnitDriverTest" />
-        <item itemvalue="JUnit.FirstTestClass.chromeDriverTest" />
-        <item itemvalue="JUnit.FirstTestClass.webElementTestGetText" />
+        <item itemvalue="TestNG.RegistrationTests.alreadyRegistred" />
+        <item itemvalue="TestNG.LoginTest.login" />
+        <item itemvalue="TestNG.RegistrationTests.registerNegativeUserShortLong" />
+        <item itemvalue="TestNG.RegistrationTests.registration" />
+        <item itemvalue="TestNG.LoginTest.loginNegative" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -177,89 +220,31 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Project_Structure" timestamp="1690463683503">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1690463683503" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1685178747933">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1685178747933" />
-    <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1690466659619">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1690466659619" />
-    <state x="322" y="51" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1687343531845">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="322" y="51" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1687343531845" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1689249077978">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1689249077978" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1689247264298">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1689247264298" />
-    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1687346826877">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1687346826877" />
-    <state width="1323" height="207" key="GridCell.Tab.0.bottom" timestamp="1691077812269">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1691077812269" />
-    <state width="1323" height="207" key="GridCell.Tab.0.center" timestamp="1691077812268">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1691077812268" />
-    <state width="1323" height="207" key="GridCell.Tab.0.left" timestamp="1691077812267">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1691077812267" />
-    <state width="1323" height="207" key="GridCell.Tab.0.right" timestamp="1691077812269">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="207" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1691077812269" />
-    <state width="1323" height="200" key="GridCell.Tab.1.bottom" timestamp="1690470568243">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1690470568243" />
-    <state width="1323" height="200" key="GridCell.Tab.1.center" timestamp="1690470568243">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1690470568243" />
-    <state width="1323" height="200" key="GridCell.Tab.1.left" timestamp="1690470568243">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1690470568243" />
-    <state width="1323" height="200" key="GridCell.Tab.1.right" timestamp="1690470568243">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="200" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1690470568243" />
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1687347309645">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1687347309645" />
-    <state x="177" y="0" key="SettingsEditor" timestamp="1689248381937">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="177" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1689248381937" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1691517832172">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1691517832172" />
-    <state x="65" y="59" key="new project wizard" timestamp="1687346830711">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="65" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1687346830711" />
-  </component>
   <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.openqa.selenium.support.pagefactory.DefaultElementLocator" memberName="searchContext" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="loginPage" language="JAVA" />
+        <watch expression="this.h" custom="java.lang.reflect.Proxy" />
+      </configuration>
       <configuration name="Application">
         <watch expression="entry2" />
       </configuration>

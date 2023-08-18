@@ -12,6 +12,8 @@ public class BrowserUtils {
     public static WebDriver getBrowser(String browser) {
         switch (browser.toLowerCase()) {
             case ("chrome"): {
+                //descărca și configureaza automat driverul Chrome WebDriver necesar pentru a controla browserul Google Chrome.
+                //in functie de versiunea browserului
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
