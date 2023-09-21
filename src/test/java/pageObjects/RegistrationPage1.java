@@ -154,8 +154,8 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.elementToBeClickable(inputLocalitate));
         inputLocalitate.click();
 
-        String judetXpath="//ul[contains(@class, 'TOWNSELECT')]/li/a[contains(text(),'" + searchLocalitate + "')]";
-        WebElement selectLocalitate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
+        String localitateXpath="//ul[contains(@class, 'TOWNSELECT')]/li/a[contains(text(),'" + searchLocalitate + "')]";
+        WebElement selectLocalitate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(localitateXpath)));
         selectLocalitate.click();
     }
 
