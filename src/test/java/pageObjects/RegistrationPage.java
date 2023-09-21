@@ -35,6 +35,7 @@ public class RegistrationPage {
     private WebElement registrationBtn;
     @FindBy(css = "input#terms+label")
     private WebElement checkBoxTerms;
+
     //WebElement checkBoxTerms = driver.findElement(By.cssSelector("input#terms+label"));
     public void clickOnCheckBoxTerms() {
         wait.until(ExpectedConditions.visibilityOf(checkBoxTerms));

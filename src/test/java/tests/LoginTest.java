@@ -17,9 +17,9 @@ public class LoginTest extends BaseTest {
     public Object[][] loginDataProvider() {
         return new Object[][]{
                 //    {"test", "", "chrome", "Please enter your username", "Please enter your password"},
-                {"dingo", "dingopassword", "edge", "Please enter your username", ""},
+           //     {"dingo", "dingopassword", "edge"},
                 //   {"test", "", "chrome", "", "Please enter your password"},
-                //   {"zebra", "", "chrome","Please enter your username", "Please enter your password"}
+                  {"zebra", "zebrapassword", "edge","Please enter your username", "Please enter your password"}
         };
     }
 
