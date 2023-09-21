@@ -20,7 +20,7 @@ public class RegistrationTest1 extends BaseTest {
         return new Object[][]{
                 //  {"adresare", "prenume", "nume", "strada", " nr", "Judet", "codPostal", "localitate", "nrTelefon", "mail", "parola"},
                 //{"edge", "prenume", "nume", "strada", "nr","123456", "08656", "mail@yahoo.com", "Parola123453vfv4342"}
-                {"edge","123456"}
+                {"chrome","123456"}
         };
     }
 
@@ -43,12 +43,12 @@ public class RegistrationTest1 extends BaseTest {
 //        registrationPage1.setNrInput(nr);
 //        registrationPage1.setTelefonInput(telefon);
 //        registrationPage1.setMailInput(mail);
-          registrationPage1.setJudetInput();
-       registrationPage1.setCodPostalInput(codPostal);
-          registrationPage1.setLocalitateInput();
+          registrationPage1.setJudetInput("Bihor");
+          registrationPage1.setCodPostalInput(codPostal);
+          registrationPage1.setLocalitateInput("Albesti");
 //        registrationPage1.setParolaInput(parola);
 //        registrationPage1.setCheckBoxTermeneConditii();
-//        registrationPage1.clickResgisterBtn();
+        registrationPage1.clickResgisterBtn();
     }
 
 

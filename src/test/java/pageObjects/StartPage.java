@@ -8,28 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.api.Screen;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
+import java.time.Duration;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class StartPage {
     WebDriver driver;
     WebDriverWait wait;
 
-    Screen screen = new Screen() {
-        @Override
-        public BufferedImage getScreenshot(int i, int i1, int i2, int i3) {
-            return null;
-        }
-
-        @Override
-        public Dimension getSize() {
-            return null;
-        }
-    };
     @FindBy(xpath = "//*[@id=\"cookie-consent-local\"]/div/footer/button[3]")
     private WebElement cookiePermision;
     @FindBy(xpath = "//*[@id=\"autocomplete-search-input\"]")
@@ -60,7 +46,7 @@ public class StartPage {
     private WebElement messageSuccesAddToCart;
     public StartPage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 15);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);
     }
 

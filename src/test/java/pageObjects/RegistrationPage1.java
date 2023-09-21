@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -52,13 +53,13 @@ public class RegistrationPage1 {
     @FindBy(xpath = "//*[@id=\"paymentAddress.appartment\"]")
     private WebElement inputBloc;
 
-    @FindBy(xpath = "//*[@id=\"registerCommand\"]/div[1]/div[9]/div[2]/a/span[1]")
+    @FindBy(xpath = "//label[contains(text(),'Județ:')]/../..//a/span[2]")
     private WebElement inputJudet;
 
     @FindBy(xpath = "//*[@id=\"paymentAddress.postalcode\"]")
     private WebElement inputCodPostal;
 
-    @FindBy(xpath = "//*[@id=\"registerCommand\"]/div[1]/div[10]/div[3]/div/a/span[1]")
+    @FindBy(xpath = "//label[contains(text(),'Localitate')]/../..//a/span[2]")
     private WebElement inputLocalitate;
 
     @FindBy(xpath = "//*[@id=\"registerCommand\"]/div[1]/div[11]/div[2]/a/span[1]")
@@ -74,7 +75,7 @@ public class RegistrationPage1 {
     @FindBy(xpath = "//*[@id=\"privacyPolicyConfirmed\"]")
     private WebElement checkBoxTermeneConditii;
 
-    @FindBy(xpath = "//*[@id=\"registerCommand\"]/div[2]/button/span")
+    @FindBy(xpath = "//button[contains(@class,'REGISTER')]")
     private WebElement btnInregistrare;
 
 
@@ -87,7 +88,7 @@ public class RegistrationPage1 {
 
     public RegistrationPage1(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 15);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);
     }
 
@@ -133,19 +134,13 @@ public class RegistrationPage1 {
         inputNr.submit();
     }
 
-    public void setJudetInput() {
+    public void setJudetInput(String searchJudet) {
         wait.until(ExpectedConditions.elementToBeClickable(inputJudet));
-        WebElement dropdown1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"registerCommand\"]/div[1]/div[9]/div[2]/a/span[1]")));
-        dropdown1.click();
-        String searchText = "Alba";
-        WebElement dropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/ul[3]")));
-        List<WebElement> options = dropdown.findElements(By.tagName("li"));
-        for (WebElement option : options) {
-            if (option.getText().equals(searchText)) {
-                option.click();
-                break;
-            }
-        }
+        inputJudet.click();
+
+        String judetXpath="//ul[contains(@class, 'AREASELECT-selectBox-dropdown-menu')]/li/a[contains(text(),'" + searchJudet + "')]";
+        WebElement selectJudet = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
+        selectJudet.click();
     }
 
 
@@ -153,22 +148,15 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.elementToBeClickable(inputCodPostal));
         inputCodPostal.clear();
         inputCodPostal.sendKeys(codPostal);
-        inputCodPostal.submit();
     }
 
-    public void setLocalitateInput() {
+    public void setLocalitateInput(String searchLocalitate) {
         wait.until(ExpectedConditions.elementToBeClickable(inputLocalitate));
-        WebElement dropdown1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"registerCommand\"]/div[1]/div[9]/div[2]/a/span[1]")));
-        dropdown1.click();
-        String searchText = "Abrud";
-        WebElement dropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/ul[3]")));
-        List<WebElement> options = dropdown.findElements(By.tagName("li"));
-        for (WebElement option : options) {
-            if (option.getText().equals(searchText)) {
-                option.click();
-                break;
-            }
-        }
+        inputLocalitate.click();
+
+        String judetXpath="//ul[contains(@class, 'TOWNSELECT')]/li/a[contains(text(),'" + searchLocalitate + "')]";
+        WebElement selectLocalitate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
+        selectLocalitate.click();
     }
 
     public void setTelefonInput(String telefon) {
@@ -207,7 +195,8 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.visibilityOf(checkBoxTermeneConditii));
         checkBoxTermeneConditii.click();
     }
-    public void clickResgisterBtn(){
+
+    public void clickResgisterBtn() {
         btnInregistrare.click();
     }
 }

@@ -2,6 +2,21 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="inhouse_snapshot" />
+      <option name="name" value="inhouse_snapshot" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/inhouse_snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="qag-releases" />
+      <option name="name" value="qag-releases" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/qag-releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="libs-releases" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/libs-releases" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
@@ -15,6 +30,31 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="valuations-releases" />
+      <option name="name" value="valuations-releases" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/valuations-releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="inhouse" />
+      <option name="name" value="inhouse" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/inhouse" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="qag-snapshots" />
+      <option name="name" value="qag-snapshots" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/qag-snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="libs-snapshots" />
+      <option name="name" value="libs-snapshots" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/libs-snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="valuations-snapshots" />
+      <option name="name" value="valuations-snapshots" />
+      <option name="url" value="https://repo.ihsmarkit.com/artifactory/valuations-snapshots" />
     </remote-repository>
   </component>
 </project>
