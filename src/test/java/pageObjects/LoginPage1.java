@@ -15,7 +15,7 @@ public class LoginPage1 {
     WebDriver driver;
     WebDriverWait wait;
 
-    @FindBy(xpath = "/html/body/header/div[2]/div/div[2]/div/div[3]/nav/div[2]/a/div")
+    @FindBy(xpath = "//a/div[contains(text(), 'Contul meu')]")
     private WebElement loginPageBtn;
 
     @FindBy(xpath = "//*[@id=\"cookie-consent-local\"]/div/footer/button[3]")
@@ -62,10 +62,10 @@ public class LoginPage1 {
         inputPassword.sendKeys(password);
         autentificationBtn.click();
     }
+
     public String getPasswordErr() {
         try {
             return passwordError.getText();
-
         } catch (NoSuchElementException ex) {
             return "";
         }

@@ -1,0 +1,26 @@
+[
+  {
+    "account": {
+      "username": "testjson@yahoo.com",
+      "password": ""
+    },
+    "userError": "",
+    "passwordError": "Vă rugăm să introduceţi parola Dvs."
+  },
+  {
+    "account": {
+      "username": "",
+      "password": "test"
+    },
+    "userError": "Adresa de e-mail este obligatorie. Vă rugăm să introduceţi adresa Dvs. de email.",
+    "passwordError": ""
+  },
+  {
+    "account": {
+      "username": "",
+      "password": ""
+    },
+    "userError": "Adresa de e-mail este obligatorie. Vă rugăm să introduceţi adresa Dvs. de email.",
+    "passwordError": "Vă rugăm să introduceţi parola Dvs."
+  }
+]

@@ -5,52 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe4763c-7fc1-4d01-84f0-51a5e20f36a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/objectModel/AccountModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/objectModel/LoginModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginDataSourceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/testdata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/testdata.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/AccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoginPage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/MyAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/StartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Draw.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExercitiiClasa/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/course08/FirstTestClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/course08/LoginTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/petHotel/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/petHotel/PetHotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tema2/Exercitii.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tema3/AuthorModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tema3/BookModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Catalog$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Catalog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/temaColectii/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/BrowserUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/ConfigUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/ConstantUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/drives/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/AccountPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/LoginPage1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/MyAccountPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/RegistrationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/RegistrationPage1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/StartPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjects/StartPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegistrationTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/RegistrationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/StartPageTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,23 +62,23 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\alt\src\test\java" />
       <recent name="C:\TestareAutomata\src\test\resources\drives" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTest1">
+  <component name="RunManager" selected="TestNG.LoginTest1.loginNegative">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TestareAutomata1" />
@@ -122,20 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Automation_12" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Automation_12" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginDataSourceTests.loginWithJsonAsDataSource" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_12" />
       <extension name="coverage">
         <pattern>
@@ -144,15 +95,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest1" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginDataSourceTests" />
+      <option name="METHOD_NAME" value="loginWithJsonAsDataSource" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest1.registerNegativeShortPassword1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest1.loginNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest1" />
+      <option name="METHOD_NAME" value="loginNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest1.loginPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest1" />
+      <option name="METHOD_NAME" value="loginPositive" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest1.registerEmptyFirstName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_12" />
       <extension name="coverage">
         <pattern>
@@ -162,7 +150,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.RegistrationTest1" />
-      <option name="METHOD_NAME" value="registerNegativeShortPassword1" />
+      <option name="METHOD_NAME" value="registerEmptyFirstName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -188,49 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartPageTest.addProductPositive" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation_12" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.StartPageTest" />
-      <option name="METHOD_NAME" value="addProductPositive" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StartPageTest.searchPositive" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation_12" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.StartPageTest" />
-      <option name="METHOD_NAME" value="searchPositive" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistrationTest1" />
-        <item itemvalue="TestNG.RegistrationTest1.registerNegativeShortPassword1" />
+        <item itemvalue="TestNG.LoginTest1.loginNegative" />
+        <item itemvalue="TestNG.LoginDataSourceTests.loginWithJsonAsDataSource" />
+        <item itemvalue="TestNG.LoginTest1.loginPositive" />
         <item itemvalue="TestNG.StartPageTest.addProduct" />
-        <item itemvalue="TestNG.StartPageTest.addProductPositive" />
-        <item itemvalue="TestNG.StartPageTest.searchPositive" />
+        <item itemvalue="TestNG.RegistrationTest1.registerEmptyFirstName" />
       </list>
     </recent_temporary>
   </component>
@@ -263,15 +215,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/RegistrationTest1.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.openqa.selenium.support.pagefactory.DefaultElementLocator" memberName="searchContext" />

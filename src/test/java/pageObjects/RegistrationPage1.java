@@ -79,12 +79,14 @@ public class RegistrationPage1 {
     private WebElement btnInregistrare;
 
 
-    @FindBy(xpath = "//*[@id=\"registerCommand\"]/div[1]/div[17]/div[2]/div/div")
-    private WebElement messageErrorPassword;
-
-
     @FindBy(xpath = "/html/body/ul[1]")
     private WebElement dropdownListJudet;
+
+    @FindBy(xpath = "//*[@id=\"macontentcontainer\"]/h1")
+    private WebElement welcomeMessageRegister;
+
+    @FindBy(xpath = "//div[@class='error-hint layer-left']/div")
+    private WebElement errorMsjFirstName;
 
     public RegistrationPage1(WebDriver driver) {
         this.driver = driver;
@@ -96,16 +98,12 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.elementToBeClickable(inputPrenume));
         inputPrenume.clear();
         inputPrenume.sendKeys(prenume);
-        //usernameInput.sendKeys(Keys.ENTER);
-        inputPrenume.submit();
     }
 
     public void setNumeInput(String nume) {
         wait.until(ExpectedConditions.elementToBeClickable(inputNumeFamilie));
         inputNumeFamilie.clear();
         inputNumeFamilie.sendKeys(nume);
-        ;
-        inputNumeFamilie.submit();
     }
 
     public void setGenderCheckBoxF() {
@@ -124,37 +122,31 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.elementToBeClickable(inputStrada));
         inputStrada.clear();
         inputStrada.sendKeys(strada);
-        inputPrenume.submit();
+        ;
     }
 
     public void setNrInput(String nr) {
         wait.until(ExpectedConditions.elementToBeClickable(inputNr));
         inputNr.clear();
         inputNr.sendKeys(nr);
-        inputNr.submit();
     }
 
     public void setJudetInput(String searchJudet) {
         wait.until(ExpectedConditions.elementToBeClickable(inputJudet));
         inputJudet.click();
 
-        String judetXpath="//ul[contains(@class, 'AREASELECT-selectBox-dropdown-menu')]/li/a[contains(text(),'" + searchJudet + "')]";
+        String judetXpath = "//ul[contains(@class, 'AREASELECT-selectBox-dropdown-menu')]/li/a[contains(text(),'" + searchJudet + "')]";
         WebElement selectJudet = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
         selectJudet.click();
     }
 
 
-    public void setCodPostalInput(String codPostal) {
-        wait.until(ExpectedConditions.elementToBeClickable(inputCodPostal));
-        inputCodPostal.clear();
-        inputCodPostal.sendKeys(codPostal);
-    }
-
     public void setLocalitateInput(String searchLocalitate) {
+        wait.until(ExpectedConditions.visibilityOf(inputLocalitate));
         wait.until(ExpectedConditions.elementToBeClickable(inputLocalitate));
         inputLocalitate.click();
 
-        String judetXpath="//ul[contains(@class, 'TOWNSELECT')]/li/a[contains(text(),'" + searchLocalitate + "')]";
+        String judetXpath = "//ul[contains(@class, 'TOWNSELECT')]/li/a[contains(text(),'" + searchLocalitate + "')]";
         WebElement selectLocalitate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
         selectLocalitate.click();
     }
@@ -163,29 +155,34 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.elementToBeClickable(inputNrTelefon));
         inputNrTelefon.clear();
         inputNrTelefon.sendKeys(telefon);
-        //usernameInput.sendKeys(Keys.ENTER);
-        inputNrTelefon.submit();
+
     }
 
     public void setMailInput(String mail) {
         wait.until(ExpectedConditions.elementToBeClickable(inputMail));
         inputMail.clear();
         inputMail.sendKeys(mail);
-        //usernameInput.sendKeys(Keys.ENTER);
-        inputMail.submit();
     }
 
     public void setParolaInput(String parola) {
         wait.until(ExpectedConditions.elementToBeClickable(inputParola));
         inputParola.clear();
         inputParola.sendKeys(parola);
-        //usernameInput.sendKeys(Keys.ENTER);
-        inputParola.submit();
+
     }
 
-    public String getPassErr() {
+    public String getFirstnameErr() {
         try {
-            return messageErrorPassword.getText();
+            String errorText = errorMsjFirstName.getText();
+            return errorText;
+        } catch (NoSuchElementException ex) {
+            return "";
+        }
+    }
+
+    public String getWelcomeMsj() {
+        try {
+            return welcomeMessageRegister.getText();
         } catch (NoSuchElementException ex) {
             return "";
         }
@@ -196,7 +193,7 @@ public class RegistrationPage1 {
         checkBoxTermeneConditii.click();
     }
 
-    public void clickResgisterBtn() {
+    public void clickRegisterBtn() {
         btnInregistrare.click();
     }
 }
