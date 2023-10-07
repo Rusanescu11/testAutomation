@@ -16,82 +16,46 @@ public class RegistrationPage1 {
 
     WebDriver driver;
     WebDriverWait wait;
-    LoginPage loginPage;
-    @FindBy(xpath = "//*[@id=\"paymentAddress.gender_female\"]")
-    private WebElement checkBoxGenderFemale;
 
-    @FindBy(xpath = "//*[@id=\"paymentAddress.gender_male\"]")
-    private WebElement checkBoxGenderMale;
 
-    @FindBy(xpath = "//*[@id=\"paymentAddress.firstname\"]")
+    @FindBy(xpath = "//div[@class='option-border' and @data-test-id='authOptions-register']")
+    private WebElement btnCreeaza;
+
+    @FindBy(xpath = "//*[@id=\"firstName\"]")
     private WebElement inputPrenume;
 
-    @FindBy(xpath = "//*[@id=\"paymentAddress.lastname\"]")
+    @FindBy(xpath = "//*[@id=\"lastName\"]")
     private WebElement inputNumeFamilie;
 
-    @FindBy(xpath = "//*[@id=\"paymentAddress.dateofbirthDay\"]")
-    private WebElement inputDataNastereZi;
-
-    @FindBy(xpath = "//*[@id=\"paymentAddress.gender_male\"]")
-    private WebElement inputDataNastereLuna;
-
-    @FindBy(xpath = "//*[@id=\"paymentAddress.dateofbirthYear\"]")
-    private WebElement inputDataNastereAn;
-
-    @FindBy(xpath = "//*[@id=\"FpaymentAddress.firm\"]")
-    private WebElement checkBoxTipClientPersFizica;
-
-    @FindBy(xpath = "//*[@id=\"CpaymentAddress.firm\"]")
-    private WebElement checkBoxTipClientCompanie;
-
-    @FindBy(xpath = "//*[@id=\"paymentAddress.streetname\"]")
-    private WebElement inputStrada;
-
-    @FindBy(xpath = "//*[@id=\"paymentAddress.streetnumber\"]")
-    private WebElement inputNr;
-
-    @FindBy(xpath = "//*[@id=\"paymentAddress.appartment\"]")
-    private WebElement inputBloc;
-
-    @FindBy(xpath = "//label[contains(text(),'Județ:')]/../..//a/span[2]")
-    private WebElement inputJudet;
-
-    @FindBy(xpath = "//*[@id=\"paymentAddress.postalcode\"]")
-    private WebElement inputCodPostal;
-
-    @FindBy(xpath = "//label[contains(text(),'Localitate')]/../..//a/span[2]")
-    private WebElement inputLocalitate;
-
-    @FindBy(xpath = "//*[@id=\"registerCommand\"]/div[1]/div[11]/div[2]/a/span[1]")
-    private WebElement inputTara;
-    @FindBy(xpath = "//*[@id=\"paymentAddress.phone1\"]")
-    private WebElement inputNrTelefon;
-    @FindBy(xpath = "//*[@id=\"login\"]")
+    @FindBy(xpath = "//*[@id=\"birthDate\"]")
+    private WebElement inputDataNastere;
+    @FindBy(xpath = "//*[@id=\"email\"]")
     private WebElement inputMail;
 
     @FindBy(xpath = "//*[@id=\"password\"]")
     private WebElement inputParola;
-
-    @FindBy(xpath = "//*[@id=\"privacyPolicyConfirmed\"]")
-    private WebElement checkBoxTermeneConditii;
-
-    @FindBy(xpath = "//button[contains(@class,'REGISTER')]")
+    @FindBy(xpath = "//button[@data-test-id='register-submit']/div[@class='button__content']")
     private WebElement btnInregistrare;
 
-
-    @FindBy(xpath = "/html/body/ul[1]")
-    private WebElement dropdownListJudet;
-
-    @FindBy(xpath = "//*[@id=\"macontentcontainer\"]/h1")
+    @FindBy(xpath = "//span[@class='small'][contains(text(),'Bun venit în contul tău. Aici poți gestiona comenzile tale')]\n")
     private WebElement welcomeMessageRegister;
 
-    @FindBy(xpath = "//div[@class='error-hint layer-left']/div")
+    @FindBy(xpath = "//div[@class='input-error-message'][contains(text(),'Prenume este obligatoriu')]")
     private WebElement errorMsjFirstName;
 
     public RegistrationPage1(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);
+    }
+
+    public void clickOnButtonCreazaCont() {
+        WebElement iframeElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("login")));
+        driver.switchTo().frame(iframeElement);
+        Duration durata = Duration.ofSeconds(30);
+        WebDriverWait wait = new WebDriverWait(driver, durata);
+        WebElement btnCreeaza = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='option-border' and @data-test-id='authOptions-register']")));
+        btnCreeaza.click();
     }
 
     public void setPrenumeInput(String prenume) {
@@ -106,58 +70,6 @@ public class RegistrationPage1 {
         inputNumeFamilie.sendKeys(nume);
     }
 
-    public void setGenderCheckBoxF() {
-        wait.until(ExpectedConditions.visibilityOf(checkBoxGenderFemale));
-        checkBoxGenderFemale.click();
-
-    }
-
-    public void setGenderCheckBoxM() {
-        wait.until(ExpectedConditions.elementToBeClickable(checkBoxGenderMale));
-        checkBoxGenderMale.clear();
-        checkBoxGenderMale.isSelected();
-    }
-
-    public void setStradaInput(String strada) {
-        wait.until(ExpectedConditions.elementToBeClickable(inputStrada));
-        inputStrada.clear();
-        inputStrada.sendKeys(strada);
-        ;
-    }
-
-    public void setNrInput(String nr) {
-        wait.until(ExpectedConditions.elementToBeClickable(inputNr));
-        inputNr.clear();
-        inputNr.sendKeys(nr);
-    }
-
-    public void setJudetInput(String searchJudet) {
-        wait.until(ExpectedConditions.elementToBeClickable(inputJudet));
-        inputJudet.click();
-
-        String judetXpath = "//ul[contains(@class, 'AREASELECT-selectBox-dropdown-menu')]/li/a[contains(text(),'" + searchJudet + "')]";
-        WebElement selectJudet = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
-        selectJudet.click();
-    }
-
-
-    public void setLocalitateInput(String searchLocalitate) {
-        wait.until(ExpectedConditions.visibilityOf(inputLocalitate));
-        wait.until(ExpectedConditions.elementToBeClickable(inputLocalitate));
-        inputLocalitate.click();
-
-        String judetXpath = "//ul[contains(@class, 'TOWNSELECT')]/li/a[contains(text(),'" + searchLocalitate + "')]";
-        WebElement selectLocalitate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(judetXpath)));
-        selectLocalitate.click();
-    }
-
-    public void setTelefonInput(String telefon) {
-        wait.until(ExpectedConditions.elementToBeClickable(inputNrTelefon));
-        inputNrTelefon.clear();
-        inputNrTelefon.sendKeys(telefon);
-
-    }
-
     public void setMailInput(String mail) {
         wait.until(ExpectedConditions.elementToBeClickable(inputMail));
         inputMail.clear();
@@ -168,30 +80,33 @@ public class RegistrationPage1 {
         wait.until(ExpectedConditions.elementToBeClickable(inputParola));
         inputParola.clear();
         inputParola.sendKeys(parola);
-
+    }
+    public void setDataNastereInput(String data) {
+        wait.until(ExpectedConditions.elementToBeClickable(inputDataNastere));
+        inputDataNastere.clear();
+        inputDataNastere.sendKeys(data);
     }
 
     public String getFirstnameErr() {
         try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='input-error-message'][contains(text(),'Prenume este obligatoriu')]")));
+
             String errorText = errorMsjFirstName.getText();
             return errorText;
         } catch (NoSuchElementException ex) {
-            return "";
+            return "nimic";
         }
     }
 
     public String getWelcomeMsj() {
         try {
+           wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='small'][contains(text(),'Bun venit în contul tău. Aici poți gestiona comenzile tale')]")));
             return welcomeMessageRegister.getText();
         } catch (NoSuchElementException ex) {
             return "";
         }
     }
 
-    public void setCheckBoxTermeneConditii() {
-        wait.until(ExpectedConditions.visibilityOf(checkBoxTermeneConditii));
-        checkBoxTermeneConditii.click();
-    }
 
     public void clickRegisterBtn() {
         btnInregistrare.click();

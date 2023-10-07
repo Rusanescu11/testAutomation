@@ -5,14 +5,14 @@
       "password": ""
     },
     "userError": "",
-    "passwordError": "Vă rugăm să introduceţi parola Dvs."
+    "passwordError": "Parola este obligatoriu"
   },
   {
     "account": {
       "username": "",
       "password": "test"
     },
-    "userError": "Adresa de e-mail este obligatorie. Vă rugăm să introduceţi adresa Dvs. de email.",
+    "userError": "Adresa ta de e-mail este obligatoriu",
     "passwordError": ""
   },
   {
@@ -20,7 +20,7 @@
       "username": "",
       "password": ""
     },
-    "userError": "Adresa de e-mail este obligatorie. Vă rugăm să introduceţi adresa Dvs. de email.",
-    "passwordError": "Vă rugăm să introduceţi parola Dvs."
+    "userError": "Adresa ta de e-mail este obligatoriu",
+    "passwordError": "Parola este obligatoriu"
   }
 ]

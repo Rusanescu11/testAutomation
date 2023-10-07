@@ -3,13 +3,16 @@ package tests;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import objectModel.LoginModel;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage1;
 import pageObjects.MyAccountPage;
+import Utils.Tools;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -17,17 +20,13 @@ import java.util.Iterator;
 public class LoginDataSourceTests extends BaseTest {
     String browser = "chrome";
     LoginPage1 loginPage1;
-    MyAccountPage myAccountPage;
-    LoginModel loginModel;
 
 
     @DataProvider(name = "jsonDp")
     public Iterator<Object[]> jsonDpCollection() throws IOException {
         Collection<Object[]> dp = new ArrayList<>();
-//      here we start json deserialization of json into LoginModel obj
         ObjectMapper objectMapper = new ObjectMapper();
         File file = new File("src\\test\\resources\\data\\testdata.json");
-
         LoginModel[] lms = objectMapper.readValue(file, LoginModel[].class);
 
         for (LoginModel lm : lms)
@@ -56,5 +55,44 @@ public class LoginDataSourceTests extends BaseTest {
         System.out.println("login terminat");
         Assert.assertEquals(loginPage1.getMailErr(), erorMail);
         Assert.assertEquals(loginPage1.getPasswordErr(), errorPass);
+    }
+
+
+    @DataProvider(name = "mysql")
+    public Iterator<Object[]> mysqlDpCollection() throws Exception {
+
+        System.out.println("Use dbHostname:" + dbHostname);
+        System.out.println("Use dbUser:" + dbUser);
+        System.out.println("Use dbPort:" + dbPort);
+        System.out.println("Use dbSchema:" + dbSchema);
+        Collection<Object[]> dp = new ArrayList<>();
+        Connection connection = DriverManager.getConnection("jdbc:mysql://" + dbHostname + ":" + dbPort +
+                "/" + dbSchema, dbUser, dbPassword);
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM login_negative");
+        while (resultSet.next()) {
+            LoginModel lm = new LoginModel(getEscapedElement(resultSet, "username"),
+                    getEscapedElement(resultSet, "password"),
+                    getEscapedElement(resultSet, "usernameErr"),
+                    getEscapedElement(resultSet, "passwordErr"));
+            dp.add(new Object[]{lm});
+        }
+        return dp.iterator();
+    }
+
+    @Test(dataProvider = "mysql")
+    public void loginWithSQLAsDataSource(LoginModel lm) {
+        loginLogM(lm);
+    }
+
+    private String getEscapedElement(ResultSet resultSet, String element) throws SQLException {
+        return Tools.replaceElements(resultSet.getString(element), "''", "");
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

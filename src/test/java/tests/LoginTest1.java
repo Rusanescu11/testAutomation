@@ -1,7 +1,9 @@
 package tests;
 
 
+import Utils.ConstantUtils;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage1;
@@ -19,10 +21,9 @@ public class LoginTest1 extends BaseTest {
     @DataProvider(name = "loginDpN")
     public Object[][] loginNegativeDataProvider() {
         return new Object[][]{
-                {"", "", "edge", "Adresa de e-mail este obligatorie. Vă rugăm să introduceţi adresa Dvs. de email.",
-                        ""},
-                {"", "parola12", "edge", "Adresa de e-mail este obligatorie. Vă rugăm să introduceţi adresa Dvs. de email.", ""},
-                {"lrusanescu@yahoo.com", "", "edge", "", "Vă rugăm să introduceţi parola Dvs."},
+
+                {"", "parola", "chrome", "Adresa ta de e-mail este obligatoriu", ""},
+                {"mail@yahoo.com", "", "chrome", "", "Parola este obligatoriu"},
         };
 
     }
@@ -44,7 +45,7 @@ public class LoginTest1 extends BaseTest {
     @DataProvider(name = "loginDp")
     public Object[][] loginPositiveDataProvider() {
         return new Object[][]{
-                {"lrusanescu@yahoo.com", "parola12", "edge", "Bine ai venit!"},
+                {ConstantUtils.VALID_EMAIL, ConstantUtils.VALID_PASSWORD, "chrome", "Bun venit în contul tău. Aici poți gestiona comenzile tale"},
         };
     }
 
@@ -57,7 +58,13 @@ public class LoginTest1 extends BaseTest {
         loginPage1.goToLoginPage();
         loginPage1.login(mail, password);
         myAccountPage = new MyAccountPage(driver);
-        Assert.assertEquals(myAccountPage.getWelcomeMessage(),welcomeMessage);
-        System.out.println("Login succesfull: " + welcomeMessage);
-       }
+        Assert.assertEquals(myAccountPage.getWelcomeMessage(), welcomeMessage);
+
+    }
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
