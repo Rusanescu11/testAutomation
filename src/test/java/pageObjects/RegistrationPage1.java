@@ -94,7 +94,7 @@ public class RegistrationPage1 {
             String errorText = errorMsjFirstName.getText();
             return errorText;
         } catch (NoSuchElementException ex) {
-            return "nimic";
+            return "";
         }
     }
 

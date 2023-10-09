@@ -11,20 +11,20 @@ import pageObjects.RegistrationPage1;
 
 public class RegistrationTest1 extends BaseTest {
     WebDriverWait wait;
-    LoginPage1 loginPage1;
-    RegistrationPage1 registrationPage1;
+    private LoginPage1 loginPage1;
+    private RegistrationPage1 registrationPage1;
 
 
     @DataProvider(name = "registerPositive")
     public Object[][] registerPositive() {
         return new Object[][]{
 
-                {"chrome", "Daria", "Manescu", ConstantUtils.REGISTER_EMAIL, ConstantUtils.REGISTER_PASSWORD,"12.02.1990"}
+                {"chrome", "Daria", "Manescu", ConstantUtils.REGISTER_EMAIL, ConstantUtils.REGISTER_PASSWORD, "12.02.1990"}
         };
     }
 
     @Test(dataProvider = "registerPositive")
-    public void registerPositive(String browser, String prenume, String nume, String mail, String parola,String dataNastere) {
+    public void registerPositive(String browser, String prenume, String nume, String mail, String parola, String dataNastere) {
         setUpDriver(browser);
         driver.get(baseUrl);
         loginPage1 = new LoginPage1(driver);
@@ -37,19 +37,19 @@ public class RegistrationTest1 extends BaseTest {
         registrationPage1.setParolaInput(parola);
         registrationPage1.setDataNastereInput(dataNastere);
         registrationPage1.clickRegisterBtn();
-        Assert.assertEquals(registrationPage1.getWelcomeMsj(),"Bun venit în contul tău. Aici poți gestiona comenzile tale");
+        Assert.assertEquals(registrationPage1.getWelcomeMsj(), "Bun venit în contul tău. Aici poți gestiona comenzile tale");
     }
 
     @DataProvider(name = "registerNegative")
     public Object[][] registerEmptyFirstName() {
         return new Object[][]{
 
-                {"chrome", "", "Manescu", ConstantUtils.REGISTERNEG_EMAIL, ConstantUtils.REGISTERNEG_PASSWORD,"12.02.1990"}
+                {"chrome", "", "Manescu", ConstantUtils.REGISTERNEG_EMAIL, ConstantUtils.REGISTERNEG_PASSWORD, "12.02.1990"}
         };
     }
 
     @Test(dataProvider = "registerNegative")
-    public void registerEmptyFirstName(String browser, String prenume, String nume, String mail, String parola,String dataNastere) {
+    public void registerEmptyFirstName(String browser, String prenume, String nume, String mail, String parola, String dataNastere) {
         setUpDriver(browser);
         driver.get(baseUrl);
         loginPage1 = new LoginPage1(driver);
@@ -64,6 +64,7 @@ public class RegistrationTest1 extends BaseTest {
         registrationPage1.clickRegisterBtn();
         Assert.assertEquals(registrationPage1.getFirstnameErr(), "Prenume este obligatoriu");
     }
+
     @AfterMethod
     public void tearDown() {
         if (driver != null) {

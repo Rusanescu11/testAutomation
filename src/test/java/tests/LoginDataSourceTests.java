@@ -18,8 +18,8 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class LoginDataSourceTests extends BaseTest {
-    String browser = "chrome";
-    LoginPage1 loginPage1;
+    private String browser = "chrome";
+    private LoginPage1 loginPage1;
 
 
     @DataProvider(name = "jsonDp")

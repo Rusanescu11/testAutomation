@@ -10,8 +10,8 @@ import pageObjects.LoginPage1;
 import pageObjects.MyAccountPage;
 
 public class LoginTest1 extends BaseTest {
-    LoginPage1 loginPage1;
-    MyAccountPage myAccountPage;
+  private  LoginPage1 loginPage1;
+   private  MyAccountPage myAccountPage;
 
     @Test
     public void loginTest() {
@@ -40,7 +40,6 @@ public class LoginTest1 extends BaseTest {
         Assert.assertEquals(loginPage1.getMailErr(), erorMail);
         Assert.assertEquals(loginPage1.getPasswordErr(), errorPass);
     }
-
 
     @DataProvider(name = "loginDp")
     public Object[][] loginPositiveDataProvider() {

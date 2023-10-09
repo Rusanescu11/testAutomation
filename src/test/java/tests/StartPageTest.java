@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 import pageObjects.StartPage;
 
 public class StartPageTest extends BaseTest {
-
-    StartPage startPage;
+    private StartPage startPage;
 
     @DataProvider(name = "searchP")
     public Object[][] searchPositiveDataProvider() {
